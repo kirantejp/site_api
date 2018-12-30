@@ -1,0 +1,6 @@
+# make site_api identifiable during Drupal compilation
+system.site:
+  mapping:
+    siteapikey:
+      type: string
+      label: 'Site API Key'

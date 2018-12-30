@@ -1,0 +1,12 @@
+site_api.page_json:
+  path: '/page_json/{site_api}/{nid}'
+  defaults:
+    _controller: '\Drupal\site_api\Controller\SiteAPIController::content'
+  options:
+    parameters:
+      site_api:
+        type: config
+      nid:
+        type: entity:node 
+  requirements:
+    _permission: 'access content'
