@@ -2,9 +2,3 @@ name: Site API
 description: Drupal 8 module for maintaining site wide Site API Key and verifying for nodes with Basic page content type
 core: 8.x
 type: module
-dependencies:
-  module:
-    - site_api
-  enforced:
-    module:
-      - site_api

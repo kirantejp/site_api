@@ -34,6 +34,7 @@ class SiteAPIController extends ControllerBase {
 
       // Access denied response if condition fails.
       $response = ['access denied' => 403];
+	  //throw new \Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException();
     }
     return new JsonResponse($response);
   }

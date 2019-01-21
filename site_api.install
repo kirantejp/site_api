@@ -1,0 +1,5 @@
+<?php
+
+function site_api_uninstall() {
+	\Drupal::configFactory()->getEditable('system.site')->get('siteapikey')->delete();
+}
